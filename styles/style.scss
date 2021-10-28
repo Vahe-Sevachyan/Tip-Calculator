@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Space Mono";
+}
+html {
+  font-size: 62.5%;
+  background-color: #c5e4e7;
+}
+
+@import "./container";
+@import "./leftSection";
+@import "./rightSection";
