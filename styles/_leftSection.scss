@@ -6,11 +6,25 @@
 .tipInput {
   width: 100%;
 }
-.percentages {
+.percentages,
+.percentages-2 {
   display: flex;
+  color: white;
 }
-.percentages h3 {
+.percentages h3,
+.percentages-2 h3 {
   background-color: #00474b;
-  width: 3rem;
+  padding: 0.5rem;
+  width: 8rem;
   margin: 1rem;
+  text-align: center;
+}
+.peopleAmount {
+  width: 100%;
+}
+.tipInputContainer {
+  margin-bottom: 2rem;
+}
+.percentages-2 {
+  margin-bottom: 2rem;
 }
