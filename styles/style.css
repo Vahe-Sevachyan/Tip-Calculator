@@ -65,6 +65,10 @@ html {
   margin-bottom: 2rem;
 }
 
+.tipAmount {
+  cursor: pointer;
+}
+
 .rightSection {
   width: 35rem;
   background-color: #00474b;
