@@ -105,7 +105,8 @@ button {
   margin-bottom: 10rem;
 }
 
-.perPerson {
+.tipPerPerson,
+.totalPerPerson {
   margin-left: auto;
 }
 
