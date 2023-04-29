@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+.container {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  min-width: 630px;
+  min-height: 300px;
+}
+
+.calculations-container {
+  width: 300px;
+  height: 260px;
+  border: solid red 1px;
+  margin: 2rem;
+}
+
+#bill-total {
+  width: 100%;
+}
+
+.percent-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100px;
+}
+
+.percent-numbers {
+  background-color: aquamarine;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 40px;
+}
+
+.custom-tip {
+  max-width: 80px;
+}
+
+.display-container {
+  width: 300px;
+  height: 260px;
+  border: solid red 1px;
+  margin: 2rem;
+}/*# sourceMappingURL=styles.css.map */

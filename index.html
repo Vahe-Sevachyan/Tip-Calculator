@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Tip-Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculations-container">
+        <label for="bill-total">Bill</label>
+        <form action="" class="Input-container">
+          <input type="text" id="bill-total" name="bill-total" />
+        </form>
+        <h4>Select Tip %</h4>
+        <div class="percent-section">
+          <div class="percent-numbers">5%</div>
+          <div class="percent-numbers">10%</div>
+          <div class="percent-numbers">15%</div>
+          <div class="percent-numbers">25%</div>
+          <div class="percent-numbers">50%</div>
+          <input type="text" class="custom-tip" class="percent-numbers" />
+        </div>
+        <form class="num-of-people-container">
+          <div>
+            <label for="num-people">Number of People</label>
+            <span>Cant be zero</span>
+          </div>
+          <div class="btm-input-container">
+            <div></div>
+            <input type="text" class="num-people" id="num-people" />
+          </div>
+        </form>
+      </div>
+      <div class="display-container">
+        <div class="tip-amount">tip amount / person $0.00</div>
+        <div class="per-person">total / person$0.00</div>
+        <button>Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
