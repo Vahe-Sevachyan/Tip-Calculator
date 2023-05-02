@@ -12,24 +12,24 @@
       <div class="calculations-container">
         <label for="bill-total">Bill</label>
         <form action="" class="Input-container">
-          <input type="text" id="bill-total" name="bill-total" value="" />
+          <input type="number" id="bill-total" name="bill-total" value="" />
         </form>
         <h4>Select Tip %</h4>
         <div class="percent-section">
-          <div class="percent-numbers">5%</div>
-          <div class="percent-numbers">10%</div>
-          <div class="percent-numbers">15%</div>
-          <div class="percent-numbers">25%</div>
-          <div class="percent-numbers">50%</div>
-          <input type="text" class="custom-tip" class="percent-numbers" />
+          <button class="percent-numbers">5%</button>
+          <button class="percent-numbers">10%</button>
+          <button class="percent-numbers">15%</button>
+          <button class="percent-numbers">25%</button>
+          <button class="percent-numbers">50%</button>
+          <input type="number" class="custom-tip" class="percent-numbers" />
         </div>
         <form class="num-of-people-container">
           <div>
             <label for="num-people">Number of People</label>
-            <span>Cant be zero</span>
+            <span class="zeroNum-warning-display"></span>
           </div>
           <div class="btm-input-container">
-            <input type="text" class="num-people" id="num-people" />
+            <input type="number" class="num-people" id="num-people" />
           </div>
         </form>
       </div>

@@ -102,4 +102,8 @@ body {
   height: 260px;
   border: solid red 1px;
   margin: 2rem;
+}
+
+.num-people:focus {
+  border-color: red;
 }/*# sourceMappingURL=styles.css.map */
