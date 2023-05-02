@@ -1,27 +1,44 @@
 .calculations-container {
-  width: 300px;
+  width: 280px;
   height: 260px;
   border: solid red 1px;
-  margin: 2rem;
 }
 #bill-total {
   width: 100%;
 }
+#bill-total:before {
+  content: "$";
+  position: absolute;
+}
 .percent-section {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
+  flex-flow: column wrap;
+  // align-items: left;
   height: 100px;
+  // margin-left: auto;
 }
 .percent-numbers {
   background-color: aquamarine;
   width: 80px;
-  height: 40px;
+  height: 35px;
   display: flex;
   justify-content: center;
   text-align: center;
   line-height: 40px;
+  margin-bottom: 10px;
 }
 .custom-tip {
   max-width: 80px;
+}
+.custom-tip {
+  height: 35px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -37,6 +37,11 @@ customTipSelector.addEventListener("keypress", (event) => {
   }
 });
 
+function checkZeroValues() {
+  zeroNumWarningDisplay.innerText = `Cant be zero`;
+  tipPerPersonDisplay.innerText = `0.00`;
+  totalPerPersonDisplay.innerText = `0.00`;
+}
 //calculations for displayed percentages
 function tipAmountPerPerson(percentNum) {
   const billTotal = document.querySelector("#bill-total").value;
@@ -58,13 +63,6 @@ function tipAmountPerPerson(percentNum) {
     totalPerPersonDisplay.innerText = `$${totalAmountPerPerson.toFixed(2)}`;
     zeroNumWarningDisplay.innerText = "";
   }
-}
-
-function checkZeroValues() {
-  zeroNumWarningDisplay.innerText = `Cant be zero`;
-  tipPerPersonDisplay.innerText = `0.00`;
-  totalPerPersonDisplay.innerText = `0.00`;
-  numOfPeople.style.borderColor = "red";
 }
 
 //calculations for custom tip value

@@ -48,14 +48,17 @@ body {
   align-items: center;
   height: 100vh;
   background-color: gray;
+  font-family: "space mono";
 }
 
 .container {
   background-color: aliceblue;
   display: flex;
   justify-content: space-between;
-  min-width: 630px;
+  width: 656px;
   min-height: 300px;
+  padding: 2rem;
 }
 @import "./calculations";
 @import "./display";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap");
