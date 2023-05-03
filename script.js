@@ -42,11 +42,12 @@ function checkZeroValues() {
   tipPerPersonDisplay.innerText = `0.00`;
   totalPerPersonDisplay.innerText = `0.00`;
 }
+
 //calculations for displayed percentages
 function tipAmountPerPerson(percentNum) {
   const billTotal = document.querySelector("#bill-total").value;
   const numOfPeople = document.querySelector("#num-people").value;
-  if (billTotal === "" || numOfPeople === "") {
+  if (billTotal === "" || numOfPeople === "" || numOfPeople === "0") {
     checkZeroValues();
   } else if ((billTotal.length > 0) & (numOfPeople.length > 0)) {
     //removes % symbol

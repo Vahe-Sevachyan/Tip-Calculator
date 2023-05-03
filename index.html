@@ -11,7 +11,7 @@
     <div class="container">
       <div class="calculations-container">
         <label for="bill-total">Bill</label>
-        <form action="" class="Input-container">
+        <form action="" class="bill-input-container">
           <input type="number" id="bill-total" name="bill-total" value="" />
         </form>
         <h4>Select Tip %</h4>
@@ -39,8 +39,20 @@
         </form>
       </div>
       <div class="display-container">
-        <div class="tip-per-person">tip amount / person $0.00</div>
-        <div class="total-per-person">total / person$0.00</div>
+        <div class="tip-amount">
+          <div class="tip-person">
+            Tip Amount
+            <div class="person">/ person</div>
+          </div>
+          <div class="tip-per-person">0.00</div>
+        </div>
+        <div class="total-num-display">
+          <div class="total-person-header">
+            Total
+            <div class="person">/ person</div>
+          </div>
+          <div class="total-per-person">0.00</div>
+        </div>
         <button>Reset</button>
       </div>
     </div>
