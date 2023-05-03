@@ -55,7 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: gray;
+  background-color: hsl(185, 41%, 84%);
   font-family: "space mono";
 }
 
@@ -66,6 +66,7 @@ body {
   width: 656px;
   min-height: 300px;
   padding: 2rem;
+  border-radius: 15px;
 }
 
 .calculations-container {
