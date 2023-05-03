@@ -77,9 +77,27 @@ body {
   width: 100%;
 }
 
+.bill {
+  font-size: 13px;
+}
+
 #bill-total:before {
   content: "$";
   position: absolute;
+}
+
+h4,
+.num-people-label,
+.zeroNum-warning-display {
+  font-size: 12px;
+}
+
+.num-people-label {
+  margin-right: 55px;
+}
+
+.zeroNum-warning-display {
+  color: tomato;
 }
 
 .percent-section {
@@ -90,7 +108,9 @@ body {
 }
 
 .percent-numbers {
-  background-color: aquamarine;
+  background-color: hsl(183, 100%, 15%);
+  color: aliceblue;
+  border-radius: 5px;
   width: 80px;
   height: 35px;
   display: flex;
@@ -98,6 +118,10 @@ body {
   text-align: center;
   line-height: 40px;
   margin-bottom: 10px;
+}
+.percent-numbers:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
 }
 
 .custom-tip {
@@ -114,11 +138,31 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#num-people,
+#bill-total {
+  text-align: right;
+  background-color: aliceblue;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+#num-people:focus,
+#bill-total:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.custom-tip {
+  border-radius: 5px;
+  text-align: right;
+}
+
 .display-container {
   width: 280px;
   height: 260px;
-  border: solid red 1px;
+  background-color: hsl(183, 100%, 15%);
   padding: 20px;
+  border-radius: 10px;
 }
 
 h4 {
@@ -135,6 +179,7 @@ h4 {
 
 .num-people {
   width: 100%;
+  text-align: left;
 }
 
 .tip-amount {
@@ -155,4 +200,34 @@ button {
   width: 100%;
   height: 40px;
   border-radius: 5px;
+}
+
+.person {
+  color: hsl(185, 41%, 84%);
+}
+
+.tip-person,
+.total-person-header {
+  color: hsl(185, 41%, 84%);
+}
+
+.person {
+  color: hsl(184, 14%, 56%);
+}
+
+.tip-per-person,
+.total-per-person {
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+}
+
+button {
+  background-color: hsl(172, 67%, 45%);
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: hsl(185, 49%, 75%);
+  color: hsl(183, 100%, 15%);
 }/*# sourceMappingURL=styles.css.map */

@@ -6,9 +6,23 @@
 #bill-total {
   width: 100%;
 }
+.bill {
+  font-size: 13px;
+}
 #bill-total:before {
   content: "$";
   position: absolute;
+}
+h4,
+.num-people-label,
+.zeroNum-warning-display {
+  font-size: 12px;
+}
+.num-people-label {
+  margin-right: 55px;
+}
+.zeroNum-warning-display {
+  color: tomato;
 }
 .percent-section {
   display: flex;
@@ -21,7 +35,9 @@
   // margin-left: auto;
 }
 .percent-numbers {
-  background-color: aquamarine;
+  background-color: hsl(183, 100%, 15%);
+  color: aliceblue;
+  border-radius: 5px;
   width: 80px;
   height: 35px;
   display: flex;
@@ -29,6 +45,10 @@
   text-align: center;
   line-height: 40px;
   margin-bottom: 10px;
+  &:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+  }
 }
 .custom-tip {
   max-width: 80px;
@@ -41,4 +61,20 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+#num-people,
+#bill-total {
+  text-align: right;
+  background-color: aliceblue;
+  border: 2px solid;
+  border-radius: 5px;
+}
+#num-people:focus,
+#bill-total:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+.custom-tip {
+  border-radius: 5px;
+  text-align: right;
 }

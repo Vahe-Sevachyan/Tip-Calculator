@@ -10,9 +10,15 @@
   <body>
     <div class="container">
       <div class="calculations-container">
-        <label for="bill-total">Bill</label>
+        <label for="bill-total" class="bill">Bill</label>
         <form action="" class="bill-input-container">
-          <input type="number" id="bill-total" name="bill-total" value="" />
+          <input
+            type="number"
+            id="bill-total"
+            name="bill-total"
+            value=""
+            placeholder="0.00"
+          />
         </form>
         <h4>Select Tip %</h4>
         <div class="percent-section">
@@ -24,17 +30,24 @@
           <input
             type="number"
             class="custom-tip"
-            placeholder="Custom"
+            placeholder="0"
             class="percent-numbers"
           />
         </div>
         <form class="num-of-people-container">
           <div>
-            <label for="num-people">Number of People</label>
+            <label for="num-people" class="num-people-label"
+              >Number of People</label
+            >
             <span class="zeroNum-warning-display"></span>
           </div>
           <div class="btm-input-container">
-            <input type="number" class="num-people" id="num-people" />
+            <input
+              type="number"
+              class="num-people"
+              id="num-people"
+              placeholder="0"
+            />
           </div>
         </form>
       </div>
@@ -44,14 +57,14 @@
             Tip Amount
             <div class="person">/ person</div>
           </div>
-          <div class="tip-per-person">0.00</div>
+          <div class="tip-per-person">$0.00</div>
         </div>
         <div class="total-num-display">
           <div class="total-person-header">
             Total
             <div class="person">/ person</div>
           </div>
-          <div class="total-per-person">0.00</div>
+          <div class="total-per-person">$0.00</div>
         </div>
         <button>Reset</button>
       </div>
