@@ -27,12 +27,8 @@ h4,
 .percent-section {
   display: flex;
   justify-content: flex-start;
-  // justify-content: space-around;
-  // flex-wrap: wrap;
   flex-flow: column wrap;
-  // align-items: left;
   height: 100px;
-  // margin-left: auto;
 }
 .percent-numbers {
   background-color: hsl(183, 100%, 15%);

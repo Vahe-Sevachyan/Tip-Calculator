@@ -4,6 +4,7 @@ const totalPerPersonDisplay = document.querySelector(".total-per-person");
 const billTotal = document.querySelector("#bill-total").value;
 const numOfPeople = document.querySelector("#num-people").value;
 const customTipSelector = document.querySelector(".custom-tip");
+const resetButton = document.querySelector(".reset-button");
 const zeroNumWarningDisplay = document.querySelector(
   ".zeroNum-warning-display"
 );
@@ -18,6 +19,9 @@ percentageNum.forEach((number) => {
   });
 });
 
+resetButton.addEventListener("click", () => {
+  window.location.reload();
+});
 //disable enter key for bill amount input field
 document.querySelector("#bill-total").addEventListener("keypress", (e) => {
   if (e.keyCode == 13) e.preventDefault();
@@ -65,7 +69,6 @@ function tipAmountPerPerson(percentNum) {
     zeroNumWarningDisplay.innerText = "";
   }
 }
-
 //calculations for custom tip value
 function customPercent(customTip) {
   const billTotal = document.querySelector("#bill-total").value;
